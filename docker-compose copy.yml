@@ -1,0 +1,11 @@
+services:
+  node:
+    container_name: user-profile-app
+    build:
+      context: .
+      dockerfile: .docker/node/Dockerfile
+    ports:
+      - '5173:5173'
+    volumes:
+      - .:/app
+      - /app/node_modules\
