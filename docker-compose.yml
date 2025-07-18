@@ -1,6 +1,6 @@
 services:
   node:
-    container_name: user-profile-app
+    container_name: aplicacao
     build:
       context: .
       dockerfile: .docker/node/Dockerfile
